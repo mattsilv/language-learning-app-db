@@ -1,0 +1,115 @@
+{
+    "meta": {
+      "llm_prompt": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. Cover Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns. Include practical tips for intonation and rhythm in casual conversations. Future lessons will focus on specific service industry vocabulary and interactions, so keep this lesson focused on foundational pronunciation skills.",
+      "file_path": "/locale/es/phase-1/sublesson1.2.json",
+      "data_dictionary": "/data-dictionary.json",
+      "legend": { "w": "word", "t": "translation", "p": "pronunciation", "s": "sentence", "e": "examples" }
+    },
+    "phase": 1,
+    "title": "Phonetics & Pronunciation",
+    "description": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. This includes Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns.",
+    "sublessons": [
+      {
+        "sublesson_number": "1.2",
+        "title": "Phonetics & Pronunciation",
+        "description": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. This includes Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns.",
+        "terms": [
+          { "w": "A", "t": "A", "p": "ah", "e": [{ "s": "amigo", "t": "friend" }] },
+          { "w": "E", "t": "E", "p": "eh", "e": [{ "s": "elefante", "t": "elephant" }] },
+          { "w": "I", "t": "I", "p": "ee", "e": [{ "s": "iglesia", "t": "church" }] },
+          { "w": "O", "t": "O", "p": "oh", "e": [{ "s": "oso", "t": "bear" }] },
+          { "w": "U", "t": "U", "p": "oo", "e": [{ "s": "uva", "t": "grape" }] },
+          { "w": "B/V", "t": "B/V", "p": "beh", "e": [{ "s": "vaca", "t": "cow" }, { "s": "bien", "t": "well" }] },
+          { "w": "C (before e, i)", "t": "C (before e, i)", "p": "seh", "e": [{ "s": "cielo", "t": "sky" }] },
+          { "w": "C (elsewhere)", "t": "C (elsewhere)", "p": "k", "e": [{ "s": "casa", "t": "house" }] },
+          { "w": "CH", "t": "CH", "p": "ch", "e": [{ "s": "chico", "t": "boy" }] },
+          { "w": "G (before e, i)", "t": "G (before e, i)", "p": "heh", "e": [{ "s": "gente", "t": "people" }] },
+          { "w": "G (elsewhere)", "t": "G (elsewhere)", "p": "g", "e": [{ "s": "gato", "t": "cat" }] },
+          { "w": "H", "t": "H", "p": "silent", "e": [{ "s": "hola", "t": "hello" }] },
+          { "w": "J", "t": "J", "p": "h", "e": [{ "s": "jugar", "t": "to play" }] },
+          { "w": "LL", "t": "LL", "p": "y", "e": [{ "s": "llama", "t": "flame" }] },
+          { "w": "Ñ", "t": "Ñ", "p": "ny", "e": [{ "s": "niño", "t": "child" }] },
+          { "w": "QU", "t": "QU", "p": "k", "e": [{ "s": "queso", "t": "cheese" }] },
+          { "w": "R", "t": "R", "p": "r", "e": [{ "s": "pero", "t": "but" }] },
+          { "w": "RR", "t": "RR", "p": "rolled r", "e": [{ "s": "perro", "t": "dog" }] },
+          { "w": "Z", "t": "Z", "p": "s", "e": [{ "s": "zapato", "t": "shoe" }] }
+        ],
+        "phrases": [
+            { "phrase": "El perro corre rápido.", "translation": "The dog runs fast.", "pronunciation": "el PEH-rroh KOH-rreh RAH-pee-doh" },
+            { "phrase": "Ella habla español muy bien.", "translation": "She speaks Spanish very well.", "pronunciation": "EH-yah AH-blah eh-spah-NYOL mwey BYEN" },
+            { "phrase": "La casa es grande.", "translation": "The house is big.", "pronunciation": "lah KAH-sah es GRAHN-deh" },
+            { "phrase": "El gato está en la silla.", "translation": "The cat is on the chair.", "pronunciation": "el GAH-toh es-TAH en lah SEE-yah" },
+            { "phrase": "Nosotros vamos al parque.", "translation": "We are going to the park.", "pronunciation": "no-SOH-tros VAH-mos ahl PAR-keh" },
+            { "phrase": "Ella tiene un coche rojo.", "translation": "She has a red car.", "pronunciation": "EH-yah TYEH-neh oon KOH-cheh ROH-hoh" },
+            { "phrase": "La comida está deliciosa.", "translation": "The food is delicious.", "pronunciation": "lah koh-MEE-dah es-TAH deh-lee-SYOH-sah" },
+            { "phrase": "¿Dónde está el baño?", "translation": "Where is the bathroom?", "pronunciation": "DOHN-deh es-TAH el BAH-nyoh" },
+            { "phrase": "¿Cómo te llamas?", "translation": "What is your name?", "pronunciation": "KOH-moh teh YAH-mahs" },
+            { "phrase": "Me llamo [name].", "translation": "My name is [name].", "pronunciation": "meh YAH-moh [name]" },
+            { "phrase": "¿Cuántos años tienes?", "translation": "How old are you?", "pronunciation": "KWAHN-tohs AH-nyohs TYEH-nehs" },
+            { "phrase": "Tengo [age] años.", "translation": "I am [age] years old.", "pronunciation": "TEHN-goh [age] AH-nyohs" },
+            { "phrase": "¿De dónde eres?", "translation": "Where are you from?", "pronunciation": "deh DOHN-deh EH-rehs" },
+            { "phrase": "Soy de [place].", "translation": "I am from [place].", "pronunciation": "soy deh [place]" },
+            { "phrase": "¿A qué te dedicas?", "translation": "What do you do?", "pronunciation": "ah keh teh deh-DEE-kahs" },
+            { "phrase": "Me dedico a [profession].", "translation": "I work as [profession].", "pronunciation": "meh deh-DEE-koh ah [profession]" }
+          ],
+          "verbs": [
+            {
+              "infinitive": "ser", "translation": "to be", "conjugations": {
+                "yo": "soy", "tú": "eres", "él/ella/usted": "es", "nosotros/nosotras": "somos", "vosotros/vosotras": "sois", "ellos/ellas/ustedes": "son"
+              },
+              "examples": [
+                { "s": "Yo soy estudiante.", "t": "I am a student." },
+                { "s": "Tú eres muy amable.", "t": "You are very kind." }
+              ]
+            },
+            {
+              "infinitive": "estar", "translation": "to be (temporary)", "conjugations": {
+                "yo": "estoy", "tú": "estás", "él/ella/usted": "está", "nosotros/nosotras": "estamos", "vosotros/vosotras": "estáis", "ellos/ellas/ustedes": "están"
+              },
+              "examples": [
+                { "s": "Estoy bien, gracias.", "t": "I am fine, thank you." },
+                { "s": "¿Cómo estás?", "t": "How are you?" }
+              ]
+            },
+            {
+              "infinitive": "tener", "translation": "to have", "conjugations": {
+                "yo": "tengo", "tú": "tienes", "él/ella/usted": "tiene", "nosotros/nosotras": "tenemos", "vosotros/vosotras": "tenéis", "ellos/ellas/ustedes": "tienen"
+              },
+              "examples": [
+                { "s": "Tengo veinte años.", "t": "I am twenty years old." },
+                { "s": "¿Cuántos años tienes?", "t": "How old are you?" }
+              ]
+            },
+            {
+              "infinitive": "hablar", "translation": "to speak", "conjugations": {
+                "yo": "hablo", "tú": "hablas", "él/ella/usted": "habla", "nosotros/nosotras": "hablamos", "vosotros/vosotras": "habláis", "ellos/ellas/ustedes": "hablan"
+              },
+              "examples": [
+                { "s": "Yo hablo español.", "t": "I speak Spanish." },
+                { "s": "¿Hablas inglés?", "t": "Do you speak English?" }
+              ]
+            },
+            {
+              "infinitive": "comer", "translation": "to eat", "conjugations": {
+                "yo": "como", "tú": "comes", "él/ella/usted": "come", "nosotros/nosotras": "comemos", "vosotros/vosotras": "coméis", "ellos/ellas/ustedes": "comen"
+              },
+              "examples": [
+                { "s": "Yo como una manzana.", "t": "I eat an apple." },
+                { "s": "¿Comes carne?", "t": "Do you eat meat?" }
+              ]
+            },
+            {
+              "infinitive": "vivir", "translation": "to live", "conjugations": {
+                "yo": "vivo", "tú": "vives", "él/ella/usted": "vive", "nosotros/nosotras": "vivimos", "vosotros/vosotras": "vivís", "ellos/ellas/ustedes": "viven"
+              },
+              "examples": [
+                { "s": "Yo vivo en Madrid.", "t": "I live in Madrid." },
+                { "s": "¿Dónde vives?", "t": "Where do you live?" }
+              ]
+            }
+          ],
+        "llm_prompt": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. Cover Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns. Include practical tips for intonation and rhythm in casual conversations. Future lessons will focus on specific service industry vocabulary and interactions, so keep this lesson focused on foundational pronunciation skills."
+      }
+    ]
+  }
+  
