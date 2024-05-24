@@ -88,45 +88,19 @@
             }
           ],
           "phrases": [
-            {
-              "phrase": "¿Cómo te llamas?", "translation": "What is your name?", "pronunciation": "KOH-moh teh YAH-mahs"
-            },
-            {
-              "phrase": "Me llamo [name].", "translation": "My name is [name].", "pronunciation": "meh YAH-moh [name]"
-            },
-            {
-              "phrase": "¿De dónde eres?", "translation": "Where are you from?", "pronunciation": "deh DOHN-deh EH-rehs"
-            },
-            {
-              "phrase": "Soy de [place].", "translation": "I am from [place].", "pronunciation": "soy deh [place]"
-            },
-            {
-              "phrase": "¿Cuántos años tienes?", "translation": "How old are you?", "pronunciation": "KWAHN-tohs AH-nyohs TYEH-nehs"
-            },
-            {
-              "phrase": "Tengo [age] años.", "translation": "I am [age] years old.", "pronunciation": "TEHN-goh [age] AH-nyohs"
-            },
-            {
-              "phrase": "¿A qué te dedicas?", "translation": "What do you do?", "pronunciation": "ah keh teh deh-DEE-kahs"
-            },
-            {
-              "phrase": "Me dedico a [profession].", "translation": "I work as [profession].", "pronunciation": "meh deh-DEE-koh ah [profession]"
-            },
-            {
-              "phrase": "¿Cuál es tu profesión?", "translation": "What is your profession?", "pronunciation": "kwahl es too pro-feh-SYOHN"
-            },
-            {
-              "phrase": "Soy [profession].", "translation": "I am a [profession].", "pronunciation": "soy [profession]"
-            },
-            {
-              "phrase": "¿Cómo estás?", "translation": "How are you?", "pronunciation": "KOH-moh ehs-TAHS"
-            },
-            {
-              "phrase": "Estoy bien, gracias.", "translation": "I am fine, thank you.", "pronunciation": "es-TOY bee-EHN, GRAH-syas"
-            },
-            {
-              "phrase": "¿Y tú?", "translation": "And you?", "pronunciation": "ee too"
-            }
+            { "phrase": "¿Cómo te llamas?", "translation": "What is your name?", "pronunciation": "KOH-moh teh YAH-mahs" },
+            { "phrase": "Me llamo [name].", "translation": "My name is [name].", "pronunciation": "meh YAH-moh [name]" },
+            { "phrase": "¿De dónde eres?", "translation": "Where are you from?", "pronunciation": "deh DOHN-deh EH-rehs" },
+            { "phrase": "Soy de [place].", "translation": "I am from [place].", "pronunciation": "soy deh [place]" },
+            { "phrase": "¿Cuántos años tienes?", "translation": "How old are you?", "pronunciation": "KWAHN-tohs AH-nyohs TYEH-nehs" },
+            { "phrase": "Tengo [age] años.", "translation": "I am [age] years old.", "pronunciation": "TEHN-goh [age] AH-nyohs" },
+            { "phrase": "¿A qué te dedicas?", "translation": "What do you do?", "pronunciation": "ah keh teh deh-DEE-kahs" },
+            { "phrase": "Me dedico a [profession].", "translation": "I work as [profession].", "pronunciation": "meh deh-DEE-koh ah [profession]" },
+            { "phrase": "¿Cuál es tu profesión?", "translation": "What is your profession?", "pronunciation": "kwahl es too pro-feh-SYOHN" },
+            { "phrase": "Soy [profession].", "translation": "I am a [profession].", "pronunciation": "soy [profession]" },
+            { "phrase": "¿Cómo estás?", "translation": "How are you?", "pronunciation": "KOH-moh ehs-TAHS" },
+            { "phrase": "Estoy bien, gracias.", "translation": "I am fine, thank you.", "pronunciation": "es-TOY bee-EHN, GRAH-syas" },
+            { "phrase": "¿Y tú?", "translation": "And you?", "pronunciation": "ee too" }
           ],
         "llm_prompt": "Generate a list of practical Spanish vocabulary and phrases for beginners focused on casual conversations. Include greetings (hello, good morning, good night), farewells (goodbye, see you later), introducing yourself (name, age, nationality), and asking for names and occupations. Also, provide common basic questions and responses (How are you?, Where are you from?). Note that future lessons will cover more detailed vocabulary related to service industries, directions, shopping, and polite expressions, so avoid overlap with those topics."
       }

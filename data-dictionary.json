@@ -2,18 +2,29 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "phase": {
-      "type": "integer",
-      "description": "The phase of the lesson plan (1, 2, or 3) as defined in your curriculum."
+    "meta": {
+      "type": "object",
+      "properties": {
+        "llm_prompt": { "type": "string", "description": "A prompt to be used by an LLM to generate content for the sublesson." },
+        "file_path": { "type": "string", "description": "The directory path and file name of the sublesson." },
+        "data_dictionary": { "type": "string", "description": "The path to the data dictionary governing the structure of the sublesson." }
+      },
+      "required": ["llm_prompt", "file_path", "data_dictionary"]
     },
-    "title": {
-      "type": "string",
-      "description": "The title of the lesson."
+    "legend": {
+      "type": "object",
+      "description": "A legend explaining abbreviated keys used in the sublesson.",
+      "properties": {
+        "w": { "type": "string", "description": "Word" },
+        "t": { "type": "string", "description": "Translation" },
+        "p": { "type": "string", "description": "Pronunciation" },
+        "s": { "type": "string", "description": "Sentence" },
+        "e": { "type": "string", "description": "Examples" }
+      }
     },
-    "description": {
-      "type": "string",
-      "description": "A brief description of the lesson's focus and content."
-    },
+    "phase": { "type": "integer", "description": "The phase of the lesson plan (1, 2, or 3) as defined in your curriculum." },
+    "title": { "type": "string", "description": "The title of the lesson." },
+    "description": { "type": "string", "description": "A brief description of the lesson's focus and content." },
     "sublessons": {
       "type": "array",
       "description": "An array of sublessons included in the lesson.",
@@ -21,18 +32,9 @@
         "type": "object",
         "description": "A single sublesson.",
         "properties": {
-          "sublesson_number": {
-            "type": "string",
-            "description": "The number of the sublesson (e.g., '1.1', '1.2')."
-          },
-          "title": {
-            "type": "string",
-            "description": "The title of the sublesson."
-          },
-          "description": {
-            "type": "string",
-            "description": "A brief description of the sublesson's focus and content."
-          },
+          "sublesson_number": { "type": "string", "description": "The number of the sublesson (e.g., '1.1', '1.2')." },
+          "title": { "type": "string", "description": "The title of the sublesson." },
+          "description": { "type": "string", "description": "A brief description of the sublesson's focus and content." },
           "terms": {
             "type": "array",
             "description": "An array of vocabulary terms included in the sublesson.",
@@ -40,37 +42,22 @@
               "type": "object",
               "description": "A single vocabulary term.",
               "properties": {
-                "word": {
-                  "type": "string",
-                  "description": "The word in the target language."
-                },
-                "translation": {
-                  "type": "string",
-                  "description": "The translation of the word in the learner's native language."
-                },
-                "pronunciation": {
-                  "type": "string",
-                  "description": "A phonetic guide to help with pronunciation."
-                },
-                "examples": {
+                "w": { "type": "string", "description": "The word in the target language." },
+                "t": { "type": "string", "description": "The translation of the word in the learner's native language." },
+                "p": { "type": "string", "description": "A phonetic guide to help with pronunciation." },
+                "e": {
                   "type": "array",
                   "description": "Example sentences using the term.",
                   "items": {
                     "type": "object",
                     "properties": {
-                      "sentence": {
-                        "type": "string",
-                        "description": "The example sentence in the target language."
-                      },
-                      "translation": {
-                        "type": "string",
-                        "description": "The translation of the example sentence."
-                      }
+                      "s": { "type": "string", "description": "The example sentence in the target language." },
+                      "t": { "type": "string", "description": "The translation of the example sentence." }
                     }
                   }
                 }
               },
-              "required": ["word", "translation"]
+              "required": ["w", "t"]
             }
           },
           "verbs": {
@@ -80,36 +67,18 @@
               "type": "object",
               "description": "A single verb.",
               "properties": {
-                "infinitive": {
-                  "type": "string",
-                  "description": "The infinitive form of the verb."
-                },
-                "translation": {
-                  "type": "string",
-                  "description": "The translation of the verb in the learner's native language."
-                },
+                "infinitive": { "type": "string", "description": "The infinitive form of the verb." },
+                "translation": { "type": "string", "description": "The translation of the verb in the learner's native language." },
                 "conjugations": {
                   "type": "object",
                   "description": "An object containing the verb's present tense conjugations, with pronouns as keys and conjugated forms as values.",
                   "properties": {
-                    "yo": {
-                      "type": "string"
-                    },
-                    "tú": {
-                      "type": "string"
-                    },
-                    "él/ella/usted": {
-                      "type": "string"
-                    },
-                    "nosotros/nosotras": {
-                      "type": "string"
-                    },
-                    "vosotros/vosotras": {
-                      "type": "string"
-                    },
-                    "ellos/ellas/ustedes": {
-                      "type": "string"
-                    }
+                    "yo": { "type": "string" },
+                    "tú": { "type": "string" },
+                    "él/ella/usted": { "type": "string" },
+                    "nosotros/nosotras": { "type": "string" },
+                    "vosotros/vosotras": { "type": "string" },
+                    "ellos/ellas/ustedes": { "type": "string" }
                   }
                 },
                 "examples": {
@@ -118,14 +87,8 @@
                   "items": {
                     "type": "object",
                     "properties": {
-                      "sentence": {
-                        "type": "string",
-                        "description": "The example sentence in the target language."
-                      },
-                      "translation": {
-                        "type": "string",
-                        "description": "The translation of the example sentence."
-                      }
+                      "s": { "type": "string", "description": "The example sentence in the target language." },
+                      "t": { "type": "string", "description": "The translation of the example sentence." }
                     }
                   }
                 }
@@ -140,31 +103,22 @@
               "type": "object",
               "description": "A single phrase.",
               "properties": {
-                "phrase": {
-                  "type": "string",
-                  "description": "The phrase in the target language."
-                },
-                "translation": {
-                  "type": "string",
-                  "description": "The translation of the phrase in the learner's native language."
-                },
-                "pronunciation": {
-                  "type": "string",
-                  "description": "A phonetic guide to help with pronunciation."
-                }
+                "phrase": { "type": "string", "description": "The phrase in the target language." },
+                "translation": { "type": "string", "description": "The translation of the phrase in the learner's native language." },
+                "pronunciation": { "type": "string", "description": "A phonetic guide to help with pronunciation." }
               },
               "required": ["phrase", "translation"]
             }
           }
         },
-        "required": ["sublesson_number", "title", "description", "terms"]
+        "required": ["sublesson_number", "title", "description", "terms", "verbs", "phrases"]
       }
     },
     "llm_context": {
       "type": "string",
       "description": "A concise text value providing context to an LLM about the goals of this data dictionary, which governs the JSON schema organization of language lessons.",
-      "default": "This data dictionary defines the JSON schema for organizing language lessons aimed at creating a personalized lesson plan in Latin American Spanish. The goal is to facilitate friendly, everyday conversations, focusing on practical vocabulary and phrases for casual interactions, especially in service industries like childcare, hospitality, restaurants, hotels, and home services. The learner aims to communicate warmly and respectfully with people from all walks of life."
+      "default": "This data dictionary defines the JSON schema for organizing language lessons aimed at creating a personalized lesson plan in any language. The goal is to facilitate friendly, everyday conversations, focusing on practical vocabulary and phrases for casual interactions, especially in service industries like childcare, hospitality, restaurants, hotels, and home services. The learner aims to communicate warmly and respectfully with people from all walks of life."
     }
   },
-  "required": ["phase", "title", "description", "sublessons", "llm_context"]
+  "required": ["meta", "legend", "phase", "title", "description", "sublessons", "llm_context"]
 }
