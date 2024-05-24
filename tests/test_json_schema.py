@@ -4,25 +4,39 @@ from jsonschema import validate
 import pytest
 import os
 import glob
+from multiprocessing import Pool, cpu_count
 
 # Load the schema
-with open(os.path.join(os.path.dirname(__file__), '../data-dictionary.json')) as schema_file:
-    schema = json.load(schema_file)
+def load_schema():
+    with open(os.path.join(os.path.dirname(__file__), '../data-dictionary.json')) as schema_file:
+        return json.load(schema_file)
 
-# Function to load JSON files with "lesson" in their name and validate against the schema
-def test_json_validation():
-    errors = []
-    for filepath in glob.glob('**/*lesson*.json', recursive=True):
+schema = load_schema()
+
+# Function to validate a single JSON file
+def validate_json(filepath):
+    try:
         with open(filepath) as json_file:
             data = json.load(json_file)
-        
-        # Validate the JSON file against the schema
-        try:
-            validate(instance=data, schema=schema)
-            print(f"{filepath} is valid.")
-        except jsonschema.exceptions.ValidationError as err:
-            errors.append(f"JSON validation error in {filepath}: {err.message}")
+        validate(instance=data, schema=schema)
+        return (filepath, None)
+    except jsonschema.exceptions.ValidationError as err:
+        return (filepath, f"JSON validation error in {filepath}: {err.message}")
 
+# Function to load and validate JSON files in parallel
+def test_json_validation():
+    errors = []
+    files_to_check = glob.glob('**/*lesson*.json', recursive=True)
+    
+    with Pool(processes=cpu_count()) as pool:
+        results = pool.map(validate_json, files_to_check)
+    
+    for filepath, error in results:
+        if error:
+            errors.append(error)
+        else:
+            print(f"{filepath} is valid.")
+    
     if errors:
         for error in errors:
             print(error)
