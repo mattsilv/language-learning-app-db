@@ -1,0 +1,52 @@
+{
+    "phase": 1,
+    "title": "Introduction to Basic Spanish",
+    "description": "This lesson introduces basic Spanish vocabulary, phrases, and foundational grammar. It covers introductions, phonetics, and present tense verb conjugations.",
+    "sublessons": [
+      {
+        "sublesson_number": "1.1",
+        "title": "Introductions and Basic Phrases",
+        "description": "Learn practical Spanish vocabulary and phrases for beginners focused on casual conversations. This includes greetings, farewells, introducing yourself, asking for names and occupations, and basic questions and responses.",
+        "keywords_groupings": [
+          "Greetings",
+          "Farewells",
+          "Introducing Yourself",
+          "Asking for Names and Occupations",
+          "Basic Questions and Responses"
+        ],
+        "llm_prompt": "Generate a list of practical Spanish vocabulary and phrases for beginners focused on casual conversations. Include greetings (hello, good morning, good night), farewells (goodbye, see you later), introducing yourself (name, age, nationality), and asking for names and occupations. Also, provide common basic questions and responses (How are you?, Where are you from?). Note that future lessons will cover more detailed vocabulary related to service industries, directions, shopping, and polite expressions, so avoid overlap with those topics."
+      },
+      {
+        "sublesson_number": "1.2",
+        "title": "Phonetics & Pronunciation",
+        "description": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. This includes Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns.",
+        "keywords_groupings": [
+          "Spanish Sounds",
+          "Intonation and Rhythm",
+          "Vowels",
+          "Consonants",
+          "Diphthongs",
+          "Syllable Stress",
+          "Intonation Patterns"
+        ],
+        "llm_prompt": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. Cover Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns. Include practical tips for intonation and rhythm in casual conversations. Future lessons will focus on specific service industry vocabulary and interactions, so keep this lesson focused on foundational pronunciation skills."
+      },
+      {
+        "sublesson_number": "1.3",
+        "title": "Present Tense Verbs and Conjugations",
+        "description": "Learn about regular and irregular present tense verb conjugations in Spanish. This includes subject pronouns and conjugations in context.",
+        "keywords_groupings": [
+          "Regular Verbs (-AR, -ER, -IR)",
+          "Irregular Verbs (ser, estar, tener, ir, hacer)",
+          "Subject Pronouns",
+          "Conjugations in Context"
+        ],
+        "llm_prompt": "Generate a lesson on regular and irregular present tense verb conjugations in Spanish. Include subject pronouns and provide examples of conjugations in context. Focus on regular verbs (-AR, -ER, -IR) and common irregular verbs (ser, estar, tener, ir, hacer)."
+      }
+    ],
+    "llm_context": {
+      "type": "string",
+      "description": "A concise text value providing context to an LLM about the goals of this data dictionary, which governs the JSON schema organization of language lessons.",
+      "default": "This data dictionary defines the JSON schema for organizing language lessons aimed at creating a personalized lesson plan in Latin American Spanish. The goal is to facilitate friendly, everyday conversations, focusing on practical vocabulary and phrases for casual interactions, especially in service industries like childcare, hospitality, restaurants, hotels, and home services. The learner aims to communicate warmly and respectfully with people from all walks of life."
+    }
+  }

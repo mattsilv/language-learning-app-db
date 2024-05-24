@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "llm_prompt": "Generate a list of practical Spanish vocabulary and phrases for beginners focused on casual conversations. Include greetings (hello, good morning, good night), farewells (goodbye, see you later), introducing yourself (name, age, nationality), and asking for names and occupations. Also, provide common basic questions and responses (How are you?, Where are you from?). Note that future lessons will cover more detailed vocabulary related to service industries, directions, shopping, and polite expressions, so avoid overlap with those topics.",
+        "file_path": "/locale/es/phase-1/sublesson1.1.json",
+        "data_dictionary": "/data-dictionary.json",
+        "legend": { "w": "word", "t": "translation", "p": "pronunciation", "s": "sentence", "e": "examples" }
+      },
+    "phase": 1,
+    "title": "Introduction to Basic Spanish",
+    "description": "This lesson introduces basic Spanish vocabulary, phrases, and foundational grammar. It covers introductions, phonetics, and present tense verb conjugations.",
+    "sublessons": [
+      {
+        "sublesson_number": "1.1",
+        "title": "Introductions and Basic Phrases",
+        "description": "Learn practical Spanish vocabulary and phrases for beginners focused on casual conversations. This includes greetings, farewells, introducing yourself, asking for names and occupations, and basic questions and responses.",
+        "terms": [
+          { "w": "Hola", "t": "Hello", "p": "OH-lah", "e": [{ "s": "Hola, ¿cómo estás?", "t": "Hello, how are you?" }] },
+          { "w": "Buenos días", "t": "Good morning", "p": "BWEH-nohs DEE-ahs", "e": [{ "s": "Buenos días, señora.", "t": "Good morning, ma'am." }] },
+          { "w": "Buenas tardes", "t": "Good afternoon", "p": "BWEH-nahs TAR-dehs", "e": [{ "s": "Buenas tardes, ¿cómo te llamas?", "t": "Good afternoon, what's your name?" }] },
+          { "w": "Buenas noches", "t": "Good night", "p": "BWEH-nahs NOH-chehs", "e": [{ "s": "Buenas noches, nos vemos mañana.", "t": "Good night, see you tomorrow." }] },
+          { "w": "Adiós", "t": "Goodbye", "p": "ah-DYOHs", "e": [{ "s": "Adiós, hasta luego.", "t": "Goodbye, see you later." }] },
+          { "w": "Hasta luego", "t": "See you later", "p": "AH-stah LWEH-goh", "e": [{ "s": "Hasta luego, Juan.", "t": "See you later, Juan." }] },
+          { "w": "Hasta mañana", "t": "See you tomorrow", "p": "AH-stah mah-NYAH-nah", "e": [{ "s": "Hasta mañana, María.", "t": "See you tomorrow, Maria." }] },
+          { "w": "Cuídate", "t": "Take care", "p": "KWEE-dah-teh", "e": [{ "s": "Adiós, cuídate.", "t": "Goodbye, take care." }] },
+          { "w": "Me llamo", "t": "My name is", "p": "meh YAH-moh", "e": [{ "s": "Me llamo María.", "t": "My name is Maria." }] },
+          { "w": "Soy [name]", "t": "I am [name]", "p": "soy", "e": [{ "s": "Soy Juan.", "t": "I am Juan." }] },
+          { "w": "Soy de [place]", "t": "I am from [place]", "p": "soy deh", "e": [{ "s": "Soy de México.", "t": "I am from Mexico." }] },
+          { "w": "Tengo [age] años", "t": "I am [age] years old", "p": "TEHN-goh [age] AH-nyohs", "e": [{ "s": "Tengo veinte años.", "t": "I am twenty years old." }] },
+          { "w": "Soy [nationality]", "t": "I am [nationality]", "p": "soy", "e": [{ "s": "Soy estadounidense.", "t": "I am American." }] },
+          { "w": "¿Cómo te llamas?", "t": "What is your name?", "p": "KOH-moh teh YAH-mahs", "e": [{ "s": "¿Cómo te llamas?", "t": "What is your name?" }] },
+          { "w": "¿De dónde eres?", "t": "Where are you from?", "p": "deh DOHN-deh EH-rehs", "e": [{ "s": "¿De dónde eres?", "t": "Where are you from?" }] },
+          { "w": "¿Cuántos años tienes?", "t": "How old are you?", "p": "KWAHN-tohs AH-nyohs TYEH-nehs", "e": [{ "s": "¿Cuántos años tienes?", "t": "How old are you?" }] },
+          { "w": "¿A qué te dedicas?", "t": "What do you do?", "p": "ah keh teh deh-DEE-kahs", "e": [{ "s": "¿A qué te dedicas?", "t": "What do you do?" }] },
+          { "w": "¿Cuál es tu profesión?", "t": "What is your profession?", "p": "kwahl es too pro-feh-SYOHN", "e": [{ "s": "¿Cuál es tu profesión?", "t": "What is your profession?" }] },
+          { "w": "¿Cómo estás?", "t": "How are you?", "p": "KOH-moh ehs-TAHS", "e": [{ "s": "¿Cómo estás?", "t": "How are you?" }] },
+          { "w": "Estoy bien, gracias", "t": "I am fine, thank you", "p": "es-TOY bee-EHN, GRAH-syas", "e": [{ "s": "Estoy bien, gracias.", "t": "I am fine, thank you." }] },
+          { "w": "¿Y tú?", "t": "And you?", "p": "ee too", "e": [{ "s": "Estoy bien, ¿y tú?", "t": "I am fine, and you?" }] },
+          { "w": "¿Dónde está?", "t": "Where is?", "p": "DOHN-deh ehs-TAH", "e": [{ "s": "¿Dónde está el baño?", "t": "Where is the bathroom?" }] },
+          { "w": "¿Cuánto cuesta?", "t": "How much is it?", "p": "KWAHN-toh KWEHS-tah", "e": [{ "s": "¿Cuánto cuesta?", "t": "How much is it?" }] },
+          { "w": "¿Puedes ayudarme?", "t": "Can you help me?", "p": "PWEH-dehs ah-yoo-DAHR-meh", "e": [{ "s": "¿Puedes ayudarme?", "t": "Can you help me?" }] },
+          { "w": "No entiendo", "t": "I don't understand", "p": "noh ehn-tyehn-doh", "e": [{ "s": "Lo siento, no entiendo.", "t": "I'm sorry, I don't understand." }] }
+        ],
+        "verbs": [
+            {
+              "infinitive": "ser", "translation": "to be", "conjugations": {
+                "yo": "soy", "tú": "eres", "él/ella/usted": "es", "nosotros/nosotras": "somos", "vosotros/vosotras": "sois", "ellos/ellas/ustedes": "son"
+              },
+              "examples": [
+                { "sentence": "Yo soy estudiante.", "translation": "I am a student." },
+                { "sentence": "Tú eres muy amable.", "translation": "You are very kind." }
+              ]
+            },
+            {
+              "infinitive": "llamarse", "translation": "to be called", "conjugations": {
+                "yo": "me llamo", "tú": "te llamas", "él/ella/usted": "se llama", "nosotros/nosotras": "nos llamamos", "vosotros/vosotras": "os llamáis", "ellos/ellas/ustedes": "se llaman"
+              },
+              "examples": [
+                { "sentence": "Me llamo Juan.", "translation": "My name is Juan." },
+                { "sentence": "¿Cómo te llamas?", "translation": "What is your name?" }
+              ]
+            },
+            {
+              "infinitive": "tener", "translation": "to have", "conjugations": {
+                "yo": "tengo", "tú": "tienes", "él/ella/usted": "tiene", "nosotros/nosotras": "tenemos", "vosotros/vosotras": "tenéis", "ellos/ellas/ustedes": "tienen"
+              },
+              "examples": [
+                { "sentence": "Tengo veinte años.", "translation": "I am twenty years old." },
+                { "sentence": "¿Cuántos años tienes?", "translation": "How old are you?" }
+              ]
+            },
+            {
+              "infinitive": "estar", "translation": "to be (temporary)", "conjugations": {
+                "yo": "estoy", "tú": "estás", "él/ella/usted": "está", "nosotros/nosotras": "estamos", "vosotros/vosotras": "estáis", "ellos/ellas/ustedes": "están"
+              },
+              "examples": [
+                { "sentence": "Estoy bien, gracias.", "translation": "I am fine, thank you." },
+                { "sentence": "¿Cómo estás?", "translation": "How are you?" }
+              ]
+            },
+            {
+              "infinitive": "dedicarse", "translation": "to do for a living", "conjugations": {
+                "yo": "me dedico", "tú": "te dedicas", "él/ella/usted": "se dedica", "nosotros/nosotras": "nos dedicamos", "vosotros/vosotras": "os dedicáis", "ellos/ellas/ustedes": "se dedican"
+              },
+              "examples": [
+                { "sentence": "Me dedico a la enseñanza.", "translation": "I work in education." },
+                { "sentence": "¿A qué te dedicas?", "translation": "What do you do?" }
+              ]
+            }
+          ],
+          "phrases": [
+            {
+              "phrase": "¿Cómo te llamas?", "translation": "What is your name?", "pronunciation": "KOH-moh teh YAH-mahs"
+            },
+            {
+              "phrase": "Me llamo [name].", "translation": "My name is [name].", "pronunciation": "meh YAH-moh [name]"
+            },
+            {
+              "phrase": "¿De dónde eres?", "translation": "Where are you from?", "pronunciation": "deh DOHN-deh EH-rehs"
+            },
+            {
+              "phrase": "Soy de [place].", "translation": "I am from [place].", "pronunciation": "soy deh [place]"
+            },
+            {
+              "phrase": "¿Cuántos años tienes?", "translation": "How old are you?", "pronunciation": "KWAHN-tohs AH-nyohs TYEH-nehs"
+            },
+            {
+              "phrase": "Tengo [age] años.", "translation": "I am [age] years old.", "pronunciation": "TEHN-goh [age] AH-nyohs"
+            },
+            {
+              "phrase": "¿A qué te dedicas?", "translation": "What do you do?", "pronunciation": "ah keh teh deh-DEE-kahs"
+            },
+            {
+              "phrase": "Me dedico a [profession].", "translation": "I work as [profession].", "pronunciation": "meh deh-DEE-koh ah [profession]"
+            },
+            {
+              "phrase": "¿Cuál es tu profesión?", "translation": "What is your profession?", "pronunciation": "kwahl es too pro-feh-SYOHN"
+            },
+            {
+              "phrase": "Soy [profession].", "translation": "I am a [profession].", "pronunciation": "soy [profession]"
+            },
+            {
+              "phrase": "¿Cómo estás?", "translation": "How are you?", "pronunciation": "KOH-moh ehs-TAHS"
+            },
+            {
+              "phrase": "Estoy bien, gracias.", "translation": "I am fine, thank you.", "pronunciation": "es-TOY bee-EHN, GRAH-syas"
+            },
+            {
+              "phrase": "¿Y tú?", "translation": "And you?", "pronunciation": "ee too"
+            }
+          ],
+        "llm_prompt": "Generate a list of practical Spanish vocabulary and phrases for beginners focused on casual conversations. Include greetings (hello, good morning, good night), farewells (goodbye, see you later), introducing yourself (name, age, nationality), and asking for names and occupations. Also, provide common basic questions and responses (How are you?, Where are you from?). Note that future lessons will cover more detailed vocabulary related to service industries, directions, shopping, and polite expressions, so avoid overlap with those topics."
+      }
+    ]
+  }
+  
