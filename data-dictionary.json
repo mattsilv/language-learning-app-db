@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "lessons": {
+      "type": "array",
+      "description": "An array containing all the lessons in the course.",
+      "items": {
+        "type": "object",
+        "description": "A single lesson object.",
+        "properties": {
+          "phase": {
+            "type": "integer",
+            "description": "The phase of the lesson plan (1, 2, or 3) as defined in your curriculum."
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the lesson."
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief description of the lesson's focus and content."
+          },
+          "terms": {
+            "type": "array",
+            "description": "An array of vocabulary terms included in the lesson.",
+            "items": {
+              "type": "object",
+              "description": "A single vocabulary term.",
+              "properties": {
+                "word": {
+                  "type": "string",
+                  "description": "The word in the target language."
+                },
+                "translation": {
+                  "type": "string",
+                  "description": "The translation of the word in the learner's native language."
+                },
+                "pronunciation": {
+                  "type": "string",
+                  "description": "A phonetic guide to help with pronunciation."
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example sentences using the term.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sentence": {
+                        "type": "string",
+                        "description": "The example sentence in the target language."
+                      },
+                      "translation": {
+                        "type": "string",
+                        "description": "The translation of the example sentence."
+                      }
+                    }
+                  }
+                }
+              },
+              "required": ["word", "translation"]
+            }
+          },
+          "verbs": {
+            "type": "array",
+            "description": "An array of verbs included in the lesson.",
+            "items": {
+              "type": "object",
+              "description": "A single verb.",
+              "properties": {
+                "infinitive": {
+                  "type": "string",
+                  "description": "The infinitive form of the verb."
+                },
+                "translation": {
+                  "type": "string",
+                  "description": "The translation of the verb in the learner's native language."
+                },
+                "conjugations": {
+                  "type": "object",
+                  "description": "An object containing the verb's present tense conjugations, with pronouns as keys and conjugated forms as values.",
+                  "properties": {
+                    "yo": {
+                      "type": "string"
+                    },
+                    "tú": {
+                      "type": "string"
+                    },
+                    "él/ella/usted": {
+                      "type": "string"
+                    },
+                    "nosotros/nosotras": {
+                      "type": "string"
+                    },
+                    "vosotros/vosotras": {
+                      "type": "string"
+                    },
+                    "ellos/ellas/ustedes": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example sentences using the verb.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sentence": {
+                        "type": "string",
+                        "description": "The example sentence in the target language."
+                      },
+                      "translation": {
+                        "type": "string",
+                        "description": "The translation of the example sentence."
+                      }
+                    }
+                  }
+                }
+              },
+              "required": ["infinitive", "translation", "conjugations"]
+            }
+          },
+          "phrases": {
+            "type": "array",
+            "description": "An array of common phrases included in the lesson.",
+            "items": {
+              "type": "object",
+              "description": "A single phrase.",
+              "properties": {
+                "phrase": {
+                  "type": "string",
+                  "description": "The phrase in the target language."
+                },
+                "translation": {
+                  "type": "string",
+                  "description": "The translation of the phrase in the learner's native language."
+                },
+                "pronunciation": {
+                  "type": "string",
+                  "description": "A phonetic guide to help with pronunciation."
+                }
+              },
+              "required": ["phrase", "translation"]
+            }
+          }
+        },
+        "required": ["phase", "title", "description", "terms"]
+      }
+    }
+  }
+}
