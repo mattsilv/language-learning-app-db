@@ -107,8 +107,7 @@
                 { "s": "¿Dónde vives?", "t": "Where do you live?" }
               ]
             }
-          ],
-        "llm_prompt": "Provide a guide for beginners on mastering Spanish phonetics and pronunciation. Cover Spanish vowel sounds, consonant sounds, diphthongs, syllable stress, and intonation patterns. Include practical tips for intonation and rhythm in casual conversations. Future lessons will focus on specific service industry vocabulary and interactions, so keep this lesson focused on foundational pronunciation skills."
+          ]
       }
     ]
   }
