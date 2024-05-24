@@ -1,26 +1,26 @@
 import json
-import jsonschema
-from jsonschema import validate
+import fastjsonschema
 import pytest
 import os
 import glob
 from multiprocessing import Pool, cpu_count
 
-# Load the schema
-def load_schema():
+# Load the schema and compile it using fastjsonschema
+def load_and_compile_schema():
     with open(os.path.join(os.path.dirname(__file__), '../data-dictionary.json')) as schema_file:
-        return json.load(schema_file)
+        schema = json.load(schema_file)
+    return fastjsonschema.compile(schema)
 
-schema = load_schema()
+validate_json_schema = load_and_compile_schema()
 
 # Function to validate a single JSON file
 def validate_json(filepath):
     try:
         with open(filepath) as json_file:
             data = json.load(json_file)
-        validate(instance=data, schema=schema)
+        validate_json_schema(data)
         return (filepath, None)
-    except jsonschema.exceptions.ValidationError as err:
+    except fastjsonschema.JsonSchemaException as err:
         return (filepath, f"JSON validation error in {filepath}: {err.message}")
 
 # Function to load and validate JSON files in parallel
