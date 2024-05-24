@@ -4,7 +4,7 @@ Welcome to the Language JSON Data Dictionary repository! This project aims to pr
 
 ## Repository Structure
 
-- **data-dictionary.json**: Schema definition for the JSON files.
+- **[data-dictionary.json](https://github.com/mattsilv/language-learning-app-db/blob/main/data-dictionary.json)**: Schema definition for the JSON files.
 - **locale/**: Directory containing language-specific folders.
   - **en/**: English language data.
   - **es/**: Spanish language data.
