@@ -11,6 +11,7 @@ with open(os.path.join(os.path.dirname(__file__), '../data-dictionary.json')) as
 
 # Function to load JSON files with "lesson" in their name and validate against the schema
 def test_json_validation():
+    errors = []
     for filepath in glob.glob('**/*lesson*.json', recursive=True):
         with open(filepath) as json_file:
             data = json.load(json_file)
@@ -20,7 +21,12 @@ def test_json_validation():
             validate(instance=data, schema=schema)
             print(f"{filepath} is valid.")
         except jsonschema.exceptions.ValidationError as err:
-            pytest.fail(f"JSON validation error in {filepath}: {err.message}")
+            errors.append(f"JSON validation error in {filepath}: {err.message}")
+
+    if errors:
+        for error in errors:
+            print(error)
+        pytest.fail("JSON validation errors occurred. See log for details.")
 
 if __name__ == "__main__":
     pytest.main()
