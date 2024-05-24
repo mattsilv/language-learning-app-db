@@ -18,10 +18,14 @@ def validate_json(filepath):
     try:
         with open(filepath) as json_file:
             data = json.load(json_file)
+    except json.JSONDecodeError as err:
+        return (filepath, f"Invalid JSON in {filepath}: {err.msg}")
+
+    try:
         validate_json_schema(data)
         return (filepath, None)
     except fastjsonschema.JsonSchemaException as err:
-        return (filepath, f"JSON validation error in {filepath}: {err.message}")
+        return (filepath, f"JSON schema validation error in {filepath}: {err.message}")
 
 # Function to load and validate JSON files in parallel
 def test_json_validation():
