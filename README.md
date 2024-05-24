@@ -9,9 +9,6 @@ Welcome to the Language JSON Data Dictionary repository! This project aims to pr
   - **en/**: English language data.
   - **es/**: Spanish language data.
   - **fr/**: French language data.
-  - [other-language-codes]/
-    - **lessons.json**: Language-specific lessons.
-    - **metadata.json**: Language-specific metadata.
 
 ## License
 
