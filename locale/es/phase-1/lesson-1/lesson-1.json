@@ -36,11 +36,6 @@
         "keywords_groupings": ["Regular Verbs (-AR, -ER, -IR)", "Irregular Verbs (ser, estar, tener, ir, hacer)", "Subject Pronouns", "Conjugations in Context"],
         "llm_prompt": "Generate a lesson on regular and irregular present tense verb conjugations in Spanish. Include subject pronouns and provide examples of conjugations in context. Focus on regular verbs (-AR, -ER, -IR) and common irregular verbs (ser, estar, tener, ir, hacer)."
       }
-    ],
-    "llm_context": {
-      "type": "string",
-      "description": "A concise text value providing context to an LLM about the goals of this data dictionary, which governs the JSON schema organization of language lessons.",
-      "default": "This data dictionary defines the JSON schema for organizing language lessons aimed at creating a personalized lesson plan in any language. The goal is to facilitate friendly, everyday conversations, focusing on practical vocabulary and phrases for casual interactions, especially in service industries like childcare, hospitality, restaurants, hotels, and home services. The learner aims to communicate warmly and respectfully with people from all walks of life."
-    }
+    ]
   }
   
