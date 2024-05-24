@@ -1,0 +1,125 @@
+{
+    "meta": {
+      "llm_prompt": "Generate a lesson on regular and irregular present tense verb conjugations in Spanish. Include subject pronouns and provide examples of conjugations in context. Focus on regular verbs (-AR, -ER, -IR) and common irregular verbs (ser, estar, tener, ir, hacer).",
+      "file_path": "/locale/es/phase-1/sublesson1.3.json",
+      "data_dictionary": "/data-dictionary.json",
+      "legend": { "w": "word", "t": "translation", "p": "pronunciation", "s": "sentence", "e": "examples" }
+    },
+    "phase": 1,
+    "title": "Present Tense Verbs and Conjugations",
+    "description": "Learn about regular and irregular present tense verb conjugations in Spanish. This includes subject pronouns and conjugations in context.",
+    "sublessons": [
+      {
+        "sublesson_number": "1.3",
+        "title": "Present Tense Verbs and Conjugations",
+        "description": "Learn about regular and irregular present tense verb conjugations in Spanish. This includes subject pronouns and conjugations in context.",
+        "terms": [
+          { "w": "yo", "t": "I", "p": "yo", "e": [{ "s": "Yo hablo español.", "t": "I speak Spanish." }] },
+          { "w": "tú", "t": "you (informal)", "p": "tú", "e": [{ "s": "Tú hablas inglés.", "t": "You speak English." }] },
+          { "w": "él", "t": "he", "p": "él", "e": [{ "s": "Él habla francés.", "t": "He speaks French." }] },
+          { "w": "ella", "t": "she", "p": "ella", "e": [{ "s": "Ella habla alemán.", "t": "She speaks German." }] },
+          { "w": "usted", "t": "you (formal)", "p": "usted", "e": [{ "s": "Usted habla italiano.", "t": "You speak Italian." }] },
+          { "w": "nosotros", "t": "we (masculine/mixed)", "p": "nosotros", "e": [{ "s": "Nosotros hablamos español.", "t": "We speak Spanish." }] },
+          { "w": "nosotras", "t": "we (feminine)", "p": "nosotras", "e": [{ "s": "Nosotras hablamos español.", "t": "We speak Spanish." }] },
+          { "w": "vosotros", "t": "you all (informal, masculine/mixed)", "p": "vosotros", "e": [{ "s": "Vosotros habláis español.", "t": "You all speak Spanish." }] },
+          { "w": "vosotras", "t": "you all (informal, feminine)", "p": "vosotras", "e": [{ "s": "Vosotras habláis español.", "t": "You all speak Spanish." }] },
+          { "w": "ellos", "t": "they (masculine/mixed)", "p": "ellos", "e": [{ "s": "Ellos hablan español.", "t": "They speak Spanish." }] },
+          { "w": "ellas", "t": "they (feminine)", "p": "ellas", "e": [{ "s": "Ellas hablan español.", "t": "They speak Spanish." }] },
+          { "w": "ustedes", "t": "you all (formal)", "p": "ustedes", "e": [{ "s": "Ustedes hablan español.", "t": "You all speak Spanish." }] }
+        ],
+        "verbs": [
+            {
+              "infinitive": "ser", "translation": "to be", "conjugations": {
+                "yo": "soy", "tú": "eres", "él/ella/usted": "es", "nosotros/nosotras": "somos", "vosotros/vosotras": "sois", "ellos/ellas/ustedes": "son"
+              },
+              "examples": [
+                { "s": "Yo soy estudiante.", "t": "I am a student." },
+                { "s": "Tú eres mi amigo.", "t": "You are my friend." }
+              ]
+            },
+            {
+              "infinitive": "estar", "translation": "to be (temporary)", "conjugations": {
+                "yo": "estoy", "tú": "estás", "él/ella/usted": "está", "nosotros/nosotras": "estamos", "vosotros/vosotras": "estáis", "ellos/ellas/ustedes": "están"
+              },
+              "examples": [
+                { "s": "Estoy cansado.", "t": "I am tired." },
+                { "s": "¿Cómo estás?", "t": "How are you?" }
+              ]
+            },
+            {
+              "infinitive": "tener", "translation": "to have", "conjugations": {
+                "yo": "tengo", "tú": "tienes", "él/ella/usted": "tiene", "nosotros/nosotras": "tenemos", "vosotros/vosotras": "tenéis", "ellos/ellas/ustedes": "tienen"
+              },
+              "examples": [
+                { "s": "Tengo dos hermanos.", "t": "I have two brothers." },
+                { "s": "¿Cuántos años tienes?", "t": "How old are you?" }
+              ]
+            },
+            {
+              "infinitive": "ir", "translation": "to go", "conjugations": {
+                "yo": "voy", "tú": "vas", "él/ella/usted": "va", "nosotros/nosotras": "vamos", "vosotros/vosotras": "vais", "ellos/ellas/ustedes": "van"
+              },
+              "examples": [
+                { "s": "Voy al mercado.", "t": "I go to the market." },
+                { "s": "¿Vas a la escuela?", "t": "Are you going to school?" }
+              ]
+            },
+            {
+              "infinitive": "hacer", "translation": "to do, to make", "conjugations": {
+                "yo": "hago", "tú": "haces", "él/ella/usted": "hace", "nosotros/nosotras": "hacemos", "vosotros/vosotras": "hacéis", "ellos/ellas/ustedes": "hacen"
+              },
+              "examples": [
+                { "s": "Hago mi tarea.", "t": "I do my homework." },
+                { "s": "¿Qué haces?", "t": "What are you doing?" }
+              ]
+            },
+            {
+              "infinitive": "hablar", "translation": "to speak", "conjugations": {
+                "yo": "hablo", "tú": "hablas", "él/ella/usted": "habla", "nosotros/nosotras": "hablamos", "vosotros/vosotras": "habláis", "ellos/ellas/ustedes": "hablan"
+              },
+              "examples": [
+                { "s": "Hablo español.", "t": "I speak Spanish." },
+                { "s": "¿Hablas inglés?", "t": "Do you speak English?" }
+              ]
+            },
+            {
+              "infinitive": "comer", "translation": "to eat", "conjugations": {
+                "yo": "como", "tú": "comes", "él/ella/usted": "come", "nosotros/nosotras": "comemos", "vosotros/vosotras": "coméis", "ellos/ellas/ustedes": "comen"
+              },
+              "examples": [
+                { "s": "Como una manzana.", "t": "I eat an apple." },
+                { "s": "¿Comes carne?", "t": "Do you eat meat?" }
+              ]
+            },
+            {
+              "infinitive": "vivir", "translation": "to live", "conjugations": {
+                "yo": "vivo", "tú": "vives", "él/ella/usted": "vive", "nosotros/nosotras": "vivimos", "vosotros/vosotras": "vivís", "ellos/ellas/ustedes": "viven"
+              },
+              "examples": [
+                { "s": "Vivo en Madrid.", "t": "I live in Madrid." },
+                { "s": "¿Dónde vives?", "t": "Where do you live?" }
+              ]
+            }
+          ],
+          "phrases": [
+            { "phrase": "Yo soy estudiante.", "translation": "I am a student.", "pronunciation": "yo soy es-too-dee-AN-teh" },
+            { "phrase": "Tú eres mi amigo.", "translation": "You are my friend.", "pronunciation": "too EH-res mee ah-MEE-go" },
+            { "phrase": "Estoy cansado.", "translation": "I am tired.", "pronunciation": "es-TOY kahn-SAH-doh" },
+            { "phrase": "¿Cómo estás?", "translation": "How are you?", "pronunciation": "KOH-moh ehs-TAHS" },
+            { "phrase": "Tengo dos hermanos.", "translation": "I have two brothers.", "pronunciation": "TEHN-goh dos ehr-MAH-nos" },
+            { "phrase": "¿Cuántos años tienes?", "translation": "How old are you?", "pronunciation": "KWAHN-tohs AH-nyohs TYEH-nehs" },
+            { "phrase": "Voy al mercado.", "translation": "I go to the market.", "pronunciation": "voy ahl mehr-KAH-doh" },
+            { "phrase": "¿Vas a la escuela?", "translation": "Are you going to school?", "pronunciation": "vahs ah lah eh-SKWEH-lah" },
+            { "phrase": "Hago mi tarea.", "translation": "I do my homework.", "pronunciation": "AH-goh mee tah-REH-ah" },
+            { "phrase": "¿Qué haces?", "translation": "What are you doing?", "pronunciation": "keh AH-sehs" },
+            { "phrase": "Hablo español.", "translation": "I speak Spanish.", "pronunciation": "AH-bloh ehs-pah-NYOL" },
+            { "phrase": "¿Hablas inglés?", "translation": "Do you speak English?", "pronunciation": "AH-blahs een-GLEHS" },
+            { "phrase": "Como una manzana.", "translation": "I eat an apple.", "pronunciation": "KOH-moh oo-nah mahn-SAH-nah" },
+            { "phrase": "¿Comes carne?", "translation": "Do you eat meat?", "pronunciation": "KOH-mehs KAR-neh" },
+            { "phrase": "Vivo en Madrid.", "translation": "I live in Madrid.", "pronunciation": "VEE-voh ehn mah-DRID" },
+            { "phrase": "¿Dónde vives?", "translation": "Where do you live?", "pronunciation": "DOHN-deh VEE-ves" }
+          ]
+      }
+    ]
+  }
+  
