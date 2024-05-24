@@ -14,129 +14,157 @@
       "type": "string",
       "description": "A brief description of the lesson's focus and content."
     },
-    "terms": {
+    "sublessons": {
       "type": "array",
-      "description": "An array of vocabulary terms included in the lesson.",
+      "description": "An array of sublessons included in the lesson.",
       "items": {
         "type": "object",
-        "description": "A single vocabulary term.",
+        "description": "A single sublesson.",
         "properties": {
-          "word": {
+          "sublesson_number": {
             "type": "string",
-            "description": "The word in the target language."
+            "description": "The number of the sublesson (e.g., '1.1', '1.2')."
           },
-          "translation": {
+          "title": {
             "type": "string",
-            "description": "The translation of the word in the learner's native language."
+            "description": "The title of the sublesson."
           },
-          "pronunciation": {
+          "description": {
             "type": "string",
-            "description": "A phonetic guide to help with pronunciation."
+            "description": "A brief description of the sublesson's focus and content."
           },
-          "examples": {
+          "terms": {
             "type": "array",
-            "description": "Example sentences using the term.",
+            "description": "An array of vocabulary terms included in the sublesson.",
             "items": {
               "type": "object",
+              "description": "A single vocabulary term.",
               "properties": {
-                "sentence": {
+                "word": {
                   "type": "string",
-                  "description": "The example sentence in the target language."
+                  "description": "The word in the target language."
                 },
                 "translation": {
                   "type": "string",
-                  "description": "The translation of the example sentence."
+                  "description": "The translation of the word in the learner's native language."
+                },
+                "pronunciation": {
+                  "type": "string",
+                  "description": "A phonetic guide to help with pronunciation."
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example sentences using the term.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sentence": {
+                        "type": "string",
+                        "description": "The example sentence in the target language."
+                      },
+                      "translation": {
+                        "type": "string",
+                        "description": "The translation of the example sentence."
+                      }
+                    }
+                  }
                 }
-              }
-            }
-          }
-        },
-        "required": ["word", "translation"]
-      }
-    },
-    "verbs": {
-      "type": "array",
-      "description": "An array of verbs included in the lesson.",
-      "items": {
-        "type": "object",
-        "description": "A single verb.",
-        "properties": {
-          "infinitive": {
-            "type": "string",
-            "description": "The infinitive form of the verb."
-          },
-          "translation": {
-            "type": "string",
-            "description": "The translation of the verb in the learner's native language."
-          },
-          "conjugations": {
-            "type": "object",
-            "description": "An object containing the verb's present tense conjugations, with pronouns as keys and conjugated forms as values.",
-            "properties": {
-              "yo": {
-                "type": "string"
               },
-              "tú": {
-                "type": "string"
-              },
-              "él/ella/usted": {
-                "type": "string"
-              },
-              "nosotros/nosotras": {
-                "type": "string"
-              },
-              "vosotros/vosotras": {
-                "type": "string"
-              },
-              "ellos/ellas/ustedes": {
-                "type": "string"
-              }
+              "required": ["word", "translation"]
             }
           },
-          "examples": {
+          "verbs": {
             "type": "array",
-            "description": "Example sentences using the verb.",
+            "description": "An array of verbs included in the sublesson.",
             "items": {
               "type": "object",
+              "description": "A single verb.",
               "properties": {
-                "sentence": {
+                "infinitive": {
                   "type": "string",
-                  "description": "The example sentence in the target language."
+                  "description": "The infinitive form of the verb."
                 },
                 "translation": {
                   "type": "string",
-                  "description": "The translation of the example sentence."
+                  "description": "The translation of the verb in the learner's native language."
+                },
+                "conjugations": {
+                  "type": "object",
+                  "description": "An object containing the verb's present tense conjugations, with pronouns as keys and conjugated forms as values.",
+                  "properties": {
+                    "yo": {
+                      "type": "string"
+                    },
+                    "tú": {
+                      "type": "string"
+                    },
+                    "él/ella/usted": {
+                      "type": "string"
+                    },
+                    "nosotros/nosotras": {
+                      "type": "string"
+                    },
+                    "vosotros/vosotras": {
+                      "type": "string"
+                    },
+                    "ellos/ellas/ustedes": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example sentences using the verb.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sentence": {
+                        "type": "string",
+                        "description": "The example sentence in the target language."
+                      },
+                      "translation": {
+                        "type": "string",
+                        "description": "The translation of the example sentence."
+                      }
+                    }
+                  }
                 }
-              }
+              },
+              "required": ["infinitive", "translation", "conjugations"]
+            }
+          },
+          "phrases": {
+            "type": "array",
+            "description": "An array of common phrases included in the sublesson.",
+            "items": {
+              "type": "object",
+              "description": "A single phrase.",
+              "properties": {
+                "phrase": {
+                  "type": "string",
+                  "description": "The phrase in the target language."
+                },
+                "translation": {
+                  "type": "string",
+                  "description": "The translation of the phrase in the learner's native language."
+                },
+                "pronunciation": {
+                  "type": "string",
+                  "description": "A phonetic guide to help with pronunciation."
+                }
+              },
+              "required": ["phrase", "translation"]
             }
           }
         },
-        "required": ["infinitive", "translation", "conjugations"]
+        "required": ["sublesson_number", "title", "description", "terms"]
       }
     },
-    "phrases": {
-      "type": "array",
-      "description": "An array of common phrases included in the lesson.",
-      "items": {
-        "type": "object",
-        "description": "A single phrase.",
-        "properties": {
-          "phrase": {
-            "type": "string",
-            "description": "The phrase in the target language."
-          },
-          "translation": {
-            "type": "string",
-            "description": "The translation of the phrase in the learner's native language."
-          },
-          "pronunciation": {
-            "type": "string",
-            "description": "A phonetic guide to help with pronunciation."
-          }
-        },
-        "required": ["phrase", "translation"]
-      }
+    "llm_context": {
+      "type": "string",
+      "description": "A concise text value providing context to an LLM about the goals of this data dictionary, which governs the JSON schema organization of language lessons.",
+      "default": "This data dictionary defines the JSON schema for organizing language lessons aimed at creating a personalized lesson plan in Latin American Spanish. The goal is to facilitate friendly, everyday conversations, focusing on practical vocabulary and phrases for casual interactions, especially in service industries like childcare, hospitality, restaurants, hotels, and home services. The learner aims to communicate warmly and respectfully with people from all walks of life."
     }
   },
-  "required": ["phase", "title", "description", "terms"]
+  "required": ["phase", "title", "description", "sublessons", "llm_context"]
 }
