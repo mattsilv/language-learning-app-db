@@ -1,0 +1,199 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "phase": 1,
+      "title": "Introductions and Basic Phrases",
+      "description": "Essential greetings, farewells, and introductions for everyday interactions.",
+      "terms": [
+        {
+          "word": "hola",
+          "translation": "hello",
+          "pronunciation": "OH-lah",
+          "examples": [
+            {
+              "sentence": "Hola, ¿cómo estás?",
+              "translation": "Hello, how are you?"
+            }
+          ]
+        },
+        {
+          "word": "adiós",
+          "translation": "goodbye",
+          "pronunciation": "ah-DYOHs",
+          "examples": [
+            {
+              "sentence": "Adiós, nos vemos mañana.",
+              "translation": "Goodbye, see you tomorrow."
+            }
+          ]
+        },
+        {
+          "word": "buenos días",
+          "translation": "good morning",
+          "pronunciation": "BWAY-nohs DEE-ahs",
+          "examples": [
+            {
+              "sentence": "Buenos días, ¿cómo estás?",
+              "translation": "Good morning, how are you?"
+            }
+          ]
+        },
+        {
+          "word": "buenas tardes",
+          "translation": "good afternoon",
+          "pronunciation": "BWAY-nahs TAR-dehs",
+          "examples": [
+            {
+              "sentence": "Buenas tardes, señor.",
+              "translation": "Good afternoon, sir."
+            }
+          ]
+        },
+        {
+          "word": "buenas noches",
+          "translation": "good night",
+          "pronunciation": "BWAY-nahs NOH-chehs",
+          "examples": [
+            {
+              "sentence": "Buenas noches, hasta mañana.",
+              "translation": "Good night, see you tomorrow."
+            }
+          ]
+        },
+        {
+          "word": "por favor",
+          "translation": "please",
+          "pronunciation": "pohr fah-VOR",
+          "examples": [
+            {
+              "sentence": "Una mesa para dos, por favor.",
+              "translation": "A table for two, please."
+            }
+          ]
+        },
+        {
+          "word": "gracias",
+          "translation": "thank you",
+          "pronunciation": "GRAH-syahs",
+          "examples": [
+            {
+              "sentence": "Gracias por tu ayuda.",
+              "translation": "Thank you for your help."
+            }
+          ]
+        },
+        {
+          "word": "de nada",
+          "translation": "you're welcome",
+          "pronunciation": "deh NAH-dah",
+          "examples": [
+            {
+              "sentence": "Gracias. - De nada.",
+              "translation": "Thank you. - You're welcome."
+            }
+          ]
+        },
+        {
+          "word": "lo siento",
+          "translation": "I'm sorry",
+          "pronunciation": "loh SYEN-toh",
+          "examples": [
+            {
+              "sentence": "Lo siento, no hablo español.",
+              "translation": "I'm sorry, I don't speak Spanish."
+            }
+          ]
+        },
+        {
+          "word": "¿Cómo te llamas?",
+          "translation": "What's your name?",
+          "pronunciation": "KOH-moh te YA-mas",
+          "examples": [
+            {
+              "sentence": "Hola, ¿cómo te llamas?",
+              "translation": "Hello, what's your name?"
+            }
+          ]
+        },
+        {
+          "word": "Me llamo...",
+          "translation": "My name is...",
+          "pronunciation": "May YA-moh...",
+          "examples": [
+            {
+              "sentence": "Me llamo Juan.",
+              "translation": "My name is Juan."
+            }
+          ]
+        }
+      ],
+      "verbs": [
+        {
+          "infinitive": "ser",
+          "translation": "to be",
+          "conjugations": {
+            "yo": "soy",
+            "tú": "eres",
+            "él/ella/usted": "es",
+            "nosotros/nosotras": "somos",
+            "vosotros/vosotras": "sois",
+            "ellos/ellas/ustedes": "son"
+          },
+          "examples": [
+            {
+              "sentence": "Yo soy estudiante.",
+              "translation": "I am a student."
+            }
+          ]
+        },
+        {
+          "infinitive": "estar",
+          "translation": "to be (location/temporary state)",
+          "conjugations": {
+            "yo": "estoy",
+            "tú": "estás",
+            "él/ella/usted": "está",
+            "nosotros/nosotras": "estamos",
+            "vosotros/vosotras": "estáis",
+            "ellos/ellas/ustedes": "están"
+          },
+          "examples": [
+            {
+              "sentence": "Estoy bien, gracias.",
+              "translation": "I am well, thank you."
+            }
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "¿Cómo estás?",
+          "translation": "How are you?",
+          "pronunciation": "KOH-moh ehs-TAHS"
+        },
+        {
+          "phrase": "¿Dónde es...?",
+          "translation": "Where is...?",
+          "pronunciation": "DOHN-deh ehs"
+        },
+        {
+          "phrase": "Mucho gusto",
+          "translation": "Nice to meet you",
+          "pronunciation": "MOO-choh GOO-stoh"
+        },
+        {
+          "phrase": "Hasta luego",
+          "translation": "See you later",
+          "pronunciation": "AH-stah LWAY-goh"
+        },
+        {
+          "phrase": "Buenas noches",
+          "translation": "Good night",
+          "pronunciation": "BWAY-nahs NOH-chehs"
+        }
+      ]
+    },
+    "required": ["phase", "title", "description", "terms"]
+  }
+  
