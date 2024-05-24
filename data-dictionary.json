@@ -111,7 +111,7 @@
             }
           }
         },
-        "required": ["sublesson_number", "title", "description", "terms", "verbs", "phrases"]
+        "required": ["sublesson_number", "title", "description"]
       }
     }
   },
